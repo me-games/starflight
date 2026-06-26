@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Starflight</title>
+    <script type="module" crossorigin src="./assets/index-Q04m9BOX.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-CqZ3osNW.css">
+  </head>
+  <body>
+    <div id="app">
+      <canvas id="scene"></canvas>
+
+      <!-- HUD -->
+      <div id="hud">
+        <div id="stats">
+          <div><span class="label">RINGS</span> <span id="rings">0 / 0</span></div>
+          <div><span class="label">TIME</span> <span id="time">00:00.0</span></div>
+          <div><span class="label">SPEED</span> <span id="speed">0</span> <span class="unit">u/s</span></div>
+          <div id="next-line"><span class="label">NEXT</span> <span id="next">—</span></div>
+        </div>
+        <div id="reticle"></div>
+      </div>
+
+      <!-- Intro / win overlay -->
+      <div id="overlay">
+        <div id="overlay-card">
+          <h1 id="overlay-title">STARFLIGHT</h1>
+          <p id="overlay-body"></p>
+          <div id="controls">
+            <div><kbd>W</kbd><kbd>S</kbd> pitch</div>
+            <div><kbd>A</kbd><kbd>D</kbd> yaw</div>
+            <div><kbd>Q</kbd><kbd>E</kbd> roll</div>
+            <div><kbd>Shift</kbd> boost &nbsp; <kbd>X</kbd> slow</div>
+          </div>
+          <button id="start-btn">FLY ▶</button>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>
